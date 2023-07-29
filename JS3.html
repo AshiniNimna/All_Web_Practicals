@@ -1,0 +1,158 @@
+<html>
+<head>
+<title> </title>
+
+<script>
+
+function x()
+{
+if(document.form.fn.value=="")
+{
+alert("Error:First name Input is empty");
+}
+
+if(document.form.ln.value=="")
+{
+alert("Error:Last name Input is empty");
+}
+
+if(document.form.gen.value=="")
+{
+alert("Error:Gender Input is empty");
+}
+
+if(document.form.em.value=="")
+{
+alert("Error:Email Input is empty");
+}
+
+if(document.form.pn.value=="")
+{
+alert("Error:Phone number Input is empty");
+}
+
+if(document.form.pw.value=="")
+{
+alert("Error:Password Input is empty");
+}
+
+if(document.form.rpw.value=="")
+{
+alert("Error:Confirm password Input is empty");
+}
+
+
+
+if(isNaN(document.form.pn.value))
+{
+alert("Enter only numbers in the phone number");
+}
+
+if(document.form.pn.value.length<11)
+{
+alert("10 numbers are needed for the phone number");
+}
+
+if(document.form.pw.value!=document.form.rpw.value)
+{
+alert("Passwords are not same");
+}
+
+}
+
+</script>
+
+</head>
+<body>
+
+<h2>Sign Up</h2>
+<form name="form">
+
+<table >
+<tr>
+<td>First name</td>
+<td><input type="text" name="fn" placeholder="Enter first name"></td>
+</tr>
+
+<tr>
+<td>Last name</td>
+<td><input type="text" name="ln" placeholder="Enter last name" ></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><select name="d">
+<option value="D">Date</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</td>
+
+<td> <select name="m">
+<option value="M">Month</option>
+<option value="j">January</option>
+<option value="f">February</option>
+<option value="m">March</option>
+<option value="a">April</option>
+</td>
+
+<td> <select name="y">
+<option value="Y">Year</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+</td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><input type="radio" name="gen" value="Female">Female</td>
+<td><input type="radio" name="gen" value="Male">Male</td>
+</tr>
+
+<tr>
+<td>Country</td>
+<td><select name="coun">
+<option value="c">Country</option>
+<option value="sl">Sri Lanka</option>
+<option value="am">USA</option>
+<option value="it">Italy</option>
+<option value="sk">South Korea</option>
+</td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="text" name="em" placeholder="Enter E-mail"></td>
+</tr>
+
+<tr>
+<td>Phone:</td>
+<td><input type="text" name="pn" placeholder="Enter phone"></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" name="pw"></td>
+</tr>
+
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="rpw"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="checkbox" name="agree">I agree to the terms and conditions</td>
+
+<tr>
+<td><input type="submit" name="submit" value="Submit" onClick="x()";></td>
+<td><input type="reset" name="reset" value="Cancel"> </td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
