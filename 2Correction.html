@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> </title>
+
+</head>
+<body>
+<script>
+
+var t=0;
+for(x=1;x<=5;x++)
+{
+
+var mark=(prompt("Enter marks of student "+x));
+ t=t+parseInt(mark);
+}
+document.write("Sum is:"+t);
+document.write("<br>");
+document.write("Average is:"+(t/5));
+document.write("<br>");
+
+function Result(){
+if((t/5)>30)
+{
+alert("Congrats! You passed");
+}
+else
+alert("Better luck next time");
+}
+ 
+</script>
+
+<button onclick="Result()"> GRADE </button>
+</body>
+</html>
